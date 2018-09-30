@@ -1,0 +1,396 @@
+<resources>
+    <string name="app_name">AYsMS</string>
+    <string name="title_cancer_advice">Cancer Advice</string>
+    <string name="title_chemo_advice">Chemotherapy Advice</string>
+    <string name="title_end_of_treatment_advice">End of Treatment Advice</string>
+    <string name="title_eating_well_advice">Eating Well Advice</string>
+
+    <string name="title_what_is_cancer">What is cancer?</string>
+    <string name="title_what_is_colorectal_cancer">What is colorectal cancer?</string>
+    <string name="title_what_is_treatment_options">Treatment options</string>
+    <string name="title_what_is_chemo">What is chemotherapy?</string>
+    <string name="title_chemo_and_infections">Chemotherapy and infections</string>
+    <string name="title_prevent_infections">How to prevent infections</string>
+    <string name="title_what_to_tell_doctors">What to tell your doctors</string>
+    <string name="title_end_of_treatment">End of treatment</string>
+    <string name="title_once_treatment_is_over">Once treatment is over</string>
+    <string name="title_worries_about_reoccurrence">Worries about reoccurrence</string>
+    <string name="title_follow_up_care">Follow-Up Care</string>
+    <string name="title_emotions_and_feelings">Emotions and Feelings</string>
+    <string name="title_disturbed_sleep">Disturbed Sleep</string>
+    <string name="title_fatigue">Fatigue</string>
+    <string name="title_lifestyle_choices">Lifestyle Choices</string>
+    <string name="title_environmental_factors">Environmental Factors</string>
+    <string name="title_making_changes">Making Changes</string>
+    <string name="title_before_after_surgery">Before and After Surgery</string>
+    <string name="title_after_surgery">After Surgery</string>
+    <string name="title_low_fibre_diets">Low Fibre and Low Residue Diets</string>
+    <string name="title_foods_you_can_eat">Foods You Can Eat</string>
+
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_setpasscode">Set Passcode</string>
+    <string name="passcode_question1">Mother\'s maiden name</string>
+    <string name="passcode_question2">Name of your first pet</string>
+    <string name="passcode_question3">Dream job</string>
+    <string name="passcode_label">Passcode</string>
+    <string name="enter_passcode">Enter passcode</string>
+    <string name="title_setpasscode_button">Set passcode</string>
+    <string name="title_changepasscode_button">Update Settings</string>
+    <string name="reenter_passcode">Re-enter passcode</string>
+    <string name="change_settings_message">Please first enter your current passcode to change your settings</string>
+    <string name="title_activity_passcode">Enter Passcode</string>
+
+    <string name="what_is_cancer_advice"><Data><![CDATA[
+        <p>Cancer starts in our cells. Cells are tiny building blocks that make up the organs and tissues of our body. Usually, these cells divide to make new cells in a controlled way. This is how our bodies grow, heal and repair.</p>
+        <p>Sometimes, this goes wrong and the cell becomes abnormal. The abnormal cell keeps dividing and making more and more abnormal cells. These cells form a lump, which is called a tumour.</p>
+        <p>Not all lumps are cancerous.</p>
+        <ul>
+        <li>A lump that is not cancerous (benign) cannot spread to anywhere else in the body.</li>
+        <li>A lump that is cancer (malignant) can grow into surrounding tissue.</li>
+        </ul>
+        <p>Cancer cells sometimes break away from the primary cancer and travel through the blood or lymphatic system to other parts of the body. Cancer cells that spread and develop into a tumour somewhere else in the body are called a secondary cancer.</p>
+        ]]> </Data>
+    </string>
+    <string name="what_is_colorectal_cancer_advice"><Data><![CDATA[
+        <p>Bowel cancer is also known as Colorectal cancer or cancer of the colon or rectum. This may seem confusing but this is because the rectum and colon make up the large bowel:</p>
+        <ul>
+        <li>Colon cancer is a cancer that develops in the colon (large bowel) but excludes the rectum.</li>
+        <li>Rectal cancer is a cancer that develops in the rectum (the very last part of the bowel before the anal opening).</li>
+        </ul>
+        <p>There are slight differences in the treatment pathway depending on whether your cancer is in the colon or rectum.</p>
+        ]]> </Data>
+    </string>
+    <string name="what_is_treatment_options_advice"><Data><![CDATA[
+        <p>Treatment for bowel cancer is decided by:</p>
+        <ul>
+        <li>where the cancer is in your bowel</li>
+        <li>how big the tumour is</li>
+        <li>the number, size and position of any tumours outside the bowel (including lymph nodes)</li>
+        <li>the type of cancer cells – their cell type and genetic make-up</li>
+        <li>your general health and fitness</li>
+        <li>your wishes as the patient.</li>
+        </ul>
+        <p>It will also be determined by:</p>
+        <ul>
+        <li>the local and national guidelines for best practice in treating bowel cancer</li>
+        <li>the availability of different treatment options within your local hospital</li>
+        <li>the access to clinical trials available within your local hospital</li>
+        <li>how well you respond to the treatment</li>
+        <li>the impact of any side-effects you may experience as a result of treatment.</li>
+        </ul>
+        <p>Everyone is different and your treatment plans will be very individual to you. Your consultant and specialist nurse will discuss the options that are available to you, including where and when your treatment will take place. They will describe to you, step by step, what each stage of your plan might involve, the likely outcomes and who will be treating you.</p>
+        ]]> </Data>
+    </string>
+    <string name="what_is_chemo_advice"><Data><![CDATA[
+        <p><b>Chemotherapy means using drugs to kill cancer cells.</b></p>
+        <p>The drugs are usually given by injection or drip into the veins ... but they may also be swallowed or injected under the skin.</p>
+        <p>You may be given just one drug or a combination of drugs.</p>
+        <p>You may have chemotherapy on its own or with other treatments such as surgery, radiotherapy or other drugs.</p>
+        ]]> </Data>
+    </string>
+    <string name="chemotherapy_and_infections"><Data><![CDATA[
+        <p>When you have chemotherapy your ability to fight infections may be seriously weakened. This is because most chemotherapy temporarily reduces the number of white cells in the blood.</p>
+        <p>Using the Chemotherapy Assessment Chart on the My Symptoms page you can monitor any side effects and contact the helpline.</p>
+        <p>The list below highlights some signs of infection to look out for:</p>
+        <ul>
+        <li>a raised temperature to about about 37.5C/100.4F</li>
+        <li>uncontrollable shivering, chills or shaking</li>
+        <li>a sore throat</li>
+        <li>diarrhoea</li>
+        <li>a cough or shortness of breath</li>
+        <li>discomfort or burning when you pass urine</li>
+        <li>a rash</li>
+        <li>bruising or bleeding for no apparent reason.</li>
+        </ul>
+        <h5><colorRed>Please also contact your oncology team if you feel unwell in any other way.</colorRed></h5>
+        <p>It is useful to keep a thermometer at home to check your temperature. It is also a good idea to carry one with you when you go out. You can buy one from the chemists.</p>
+        <p>For more information on infections, check the advice on How to Prevent Infections.</p>
+        ]]> </Data>
+    </string>
+    <string name="how_to_prevent_infections"><Data><![CDATA[
+        <h5><colorRed>Try to avoid ...</colorRed></h5>
+        <ul>
+        <li>contact with anyone who has an obvious infection</li>
+        <li>unpasteurised milk and cheese</li>
+        <li>raw and undercooked eggs</li>
+        <li>undercooked food, especially chicken and other meats</li>
+        <li>take away foods</li>
+        <li>changing nappies of children who have recently been vaccinated</li>
+        <li>getting close to animals and their excreta, especially cat litter trays and bird cages (use gloves)</li>
+        <li>gardening injuries (wear thick gloves).</li>
+        </ul>
+        <h5><colorRed>Always do these ...</colorRed></h5>
+        <ul>
+        <li>wash hands before you prepare or eat food</li>
+        <li>wash and peel all fruit, vegetables and salads</li>
+        <li>wash your hands after handling animals, fresh flowers or pot plants</li>
+        <li>clean you teeth regularly (at least twice a day)</li>
+        <li>use any mouthwashes your doctor has recommended</li>
+        <li>ask your health professional if it is OK for you to drink alcohol</li>
+        <li>a flu jab is a good idea - but discuss this, and other immunisations, with a health professional</li>
+        <li>defrost food thoroughly.</li>
+        </ul>
+        <h5><colorRed>Remember ...</colorRed></h5>
+        <h6><colorRed>If you think you have an infection it is very important that you contact your hospital immediately.</colorRed></h6>
+        <p>You may need antibiotic treatment which should be received within 1 hour.</p>
+        ]]> </Data>
+    </string>
+    <string name="what_to_tell_your_doctors"><Data><![CDATA[
+        <h5><colorRed>Please tell your doctors if ...</colorRed></h5>
+        <ul>
+        <li><b>You have any new symptoms: </b>the sooner we know, the sooner we can treat them.</b></li>
+        <li><b>You feel sick or vomit: </b>we can give you anti-sickness drugs.</b></li>
+        <li><b>you get mouth ulcers</b></li>
+        <li><b>You develop shingles or a cold sore: </b>if we catch these early, the treatment is more likely to work.</b></li>
+        <li><b>You are planning a holiday: </b>we will try to fit your treatment around your plans - or we may help advise you not to travel. We can write to your insurers to help you get your holiday money back.</b></li>
+       </ul>
+        ]]></Data>
+    </string>
+    <string name="sex_pregnancy_family_planning"><Data><![CDATA[
+        <p>Chemotherapy does not mean that you should not have sex - but you may not feel like it.</p>
+        <p><b>If you are planning to have a family in the future,</b> tell your hospital doctor. Cancer treatment can reduce fertility, especially in men.</p>
+        <p>Chemotherapy make some people infertile - either temporarily or permanently - but this is not always the case, <b>so continue to use your normal contraceptive during treatment.</b></p>
+        <p><b>Avoid pregnancy during chemotherapy.</b> If you or your partner take certain chemotherapy drugs just before or during pregnancy they may harm the developing baby.</p>
+        <p><b>If your period is late and you think you may be pregnant, tell your doctor straight away.</b></p>
+        ]]></Data>
+    </string>
+    <string name="end_of_treatment"><Data><![CDATA[
+        <p>As your treatment is coming to an end you will be looking forward to getting back to normal life. However, it is likely that all chemotherapy patients will feel a variety of emotions following their treatment.</p>
+        <p>For many, the end of treatment can be upsetting and very difficult to cope with. You may feel anxious, lonely, frightened or neglected, as the regular hospital visits may have been reassuring.</p>
+        <p>These feelings may come as a shock, as you and your family had expected to put the treatment behind you and move on. Instead, you find there may be new challenges and changes to deal with.</p>
+        <p>Recovery times, like treatment, vary in that everyone is different. Energy levels are sometimes low after treatment and some patients find that this can continue for a number of months and this is quite normal.</p>
+        <p>If this is the case, please talk to your doctor or key worker/clinical nurse specialist for advice about this</p>
+        <p>Your key worker is available for support even after you have finished your treatment and will be able to direct you to available support services.</p>
+        <h5>Follow up arrangements</h5>
+        <p>You may wish to make notes in the app about any follow up arrangements that you are given once your chemotherapy has finished.</p>
+        ]]></Data>
+    </string>
+    <string name="once_treatment_is_over_advice"><Data><![CDATA[
+        <p><b>Once treatment is over, your focus can shift to improving your general health and trying to regain a sense of normality. You will be becoming an expert in your body, developing new routines and skills to cope with the recent changes in your health. You may also have to find new ways of living and working with the side-effects of your operation, chemotherapy or radiotherapy.</b></p>
+        <p>A cancer diagnosis often makes people reassess many aspects of their life, and what is really important to them. This refocusing can often be a very positive and empowering experience. Many people say that living beyond bowel cancer has given them a greater appreciation of life, helped them to understand what is most important to them, or to discover strong spiritual or religious beliefs. No one can predict how things will be for you, but the more open and honest you are about how you are feeling, the easier it will be for others to support you.</p>
+        ]]></Data>
+    </string>
+    <string name="worries_about_reoccurrence_advice"><Data><![CDATA[
+        <p><b>We know that the biggest fear of many bowel cancer patients is that your cancer will come back, either in your bowel or in other parts of your body.</b></p>
+        <p>Many people describe how they become anxious before follow-up appointments, and that going back for clinic appointments and waiting for test results can be stressful. Even visiting the hospital again can create anxiety for some people.</p>
+        <p>Your colorectal specialist team will help you to understand your individual risk of the cancer coming back, based on your original diagnosis – the type and stage of cancer at that time. The follow-up tests described on page 6 will allow your hospital team to monitor you. If anything is identified in these tests, a review at a colorectal multi-disciplinary team meeting will determine if further tests are necessary.</p>
+        <p><b>Any recurrence is usually picked up by routine tests, rather than any signs and symptoms you may notice yourself. However, if you do have symptoms, including those listed below, do get in touch with your GP or colorectal specialist nurse:</b></p>
+        <ul>
+        <li>continuing pain that doesn’t go away with usual painkillers</li>
+        <li>unexplained lumps, bumps or swellings</li>
+        <li>unexplained change in normal bowel habit that lasts for six weeks or more – especially if you are waking up in the night with loose stools</li>
+        <li>unexplained loss of appetite, weight loss or swollen abdomen</li>
+        <li>any new bleeding from your back passage (or in urine)</li>
+        <li>any unexplained shortness of breath or cough which lasts more than a week</li>
+        <li>bleeding or discharge from your wound site.</li>
+       </ul>
+        ]]></Data>
+    </string>
+    <string name="follow_up_care_advice"><Data><![CDATA[
+        <p><b>Regular follow-up is offered to all patients with primary bowel cancer who have had treatment to cure the cancer. This starts with a clinic visit four to six weeks after your operation. You should be offered regular surveillance which may include:</b></p>
+        <ul>
+        <li>at least two CT scans of the chest, abdomen and pelvis in the first three years</li>
+        <li>regular CEA (blood) tests at least every six months in the first three years</li>
+        <li>a surveillance colonoscopy at one year after initial treatment or sooner if you did not have one before surgery.</li>
+        </ul>
+        <p>Follow-up appointments with your surgical team and then your colorectal nurse specialist are important opportunities to voice any concerns and describe ongoing symptoms if you have them. At these appointments, you may:</p>
+        <ul>
+        <li>discuss how you are feeling both physically and psychologically</li>
+        <li>discuss your test results</li>
+        <li>agree plans to investigate or treat problems with symptoms or changes in your body</li>
+        <li>be referred to other services to help you manage other non-cancer symptoms or problems</li>
+        <li>discuss your follow-up pathway.</li>
+        </ul>
+        <p>At your appointment with your colorectal nurse specialist you will be able to discuss any problems and complete a holistic needs assessment (HNA) form, which will be revisited regularly to help shape your rehabilitation and recovery care plan.</p>
+        <p>A good holistic needs assessment not only gathers useful information about you and how you are feeling, but can also be therapeutic in its own right. Sometimes a conversation with the nurse will be enough to reassure you. You may require a referral for further help, for example to the local cancer centre or dietitian. The HNA form, which you should be given to complete, will ask you to identify any problems you may be having such as wound healing, pain, changes in bowel habit, diet, energy levels, sleep quality, mobility, coping with day-to-day activities, personal relationships, and any other problems or concerns.</p>
+        <p>Your hospital team will follow their local guidelines to ensure that you continue to be monitored in the most appropriate way for you. </p>
+        <p>Throughout your treatment, your GP will have received letters from your hospital team. Your GP is in charge of your care when you are not receiving active treatment from your surgeon, oncologist or palliative care team. Your GP is also required to carry out a cancer care review with you within six months of your diagnosis.</p>
+        ]]></Data>
+    </string>
+    <string name="emotions_and_feelings_advice"><Data><![CDATA[
+        <p><b>Many people talk about a feeling of ‘the circus leaving town’ in the days and weeks after active treatment finishes. As your family and friends return to their own daily routines, it may be hard for you to fit back into your old life, and you may start to look back on everything that has happened to you.</b></p>
+        <p>Some days you may feel that you are recovering well; but other days may be a struggle, leaving you feeling low. After the regular contact of treatment, you may feel isolated and lonely, as if you’ve been abandoned.</p>
+        <p>After the shock of diagnosis and the demands of treatment it can also be a relief to be feeling more normal and looking forward to a more comfortable and healthy future, but it can also be a time of mixed emotions. The psychological recovery process is very individual and can take much longer than the medical side of things. It helps to be patient and to be gentle on yourself. </p>
+        <p>Patience ... </p>
+        <p><i>Everybody who recovers from treatment is always surprised at how long it takes before they feel back to their old self. Medically you may recover in a few months. Psychologically it can take longer before the fatigue finally wears off. Try to give yourself lots of time to recover. Don’t be in a hurry. You will make most of the progress early on – but give yourself time to recover fully. It’s worth having a one-year or a even a two-year plan for getting back on your feet. Don’t worry yourself or rush yourself through recovery. People don’t recover quickly.</i></p>
+        ]]></Data>
+    </string>
+    <string name="disturbed_sleep_advice"><Data><![CDATA[
+        <p><b>Illness, treatment and surgery can all take their toll on your energy levels, making you feel very tired and lethargic. Worry and uncertainty associated with your cancer diagnosis are likely to have given you several sleepless nights, and spending time in hospital can often disrupt your sleeping patterns.</b></p>
+        <p>It’s not unusual to find that this can be the start of longer-term problems with insomnia, low energy levels or a really deep fatigue that can last for many months after treatment finishes. Tiredness may be linked to other problems, untreated symptoms like pain or anaemia, or other changes in your body. Stress and anxiety can also take their toll and make it difficult to get to sleep, or cause you to wake up again in the small hours of the morning.</p>
+        <p>If your bowel cancer diagnosis is causing you so much anxiety that you just cannot sleep, it’s worth talking to your GP about self-help strategies or complementary therapies. If necessary, they can refer you to a counsellor or mental health professional, or prescribe medication.</p>
+        <p>As we get older, sleep can be disturbed by a need to use the toilet and this can be a particular problem after bowel cancer treatment. If you find frequency or urgency of bowel movements during the night is disturbing your sleep, you may wish to talk to your GP about medication such as loperamide to slow your digestion down.</p>
+        <p>The worry that you are not getting enough sleep can itself be a problem. If you find yourself awake in the night, tell yourself that relaxing can be as refreshing as sleep. Lie quietly and don’t keep looking at the clock. Allow your thoughts to drift away and focus on things that make you feel happy. A relaxation or meditation CD or podcast can be a way to take your mind off the fact that you are not sleeping and you may actually drift off.</p>
+        <p><b>Good sleep habits:</b></p>
+        <ul>
+        <li>Avoid caffeinated drinks (coffee, tea, cola) for at least four hours before bedtime – try a cup of herbal tea instead.</li>
+        <li>Avoid smoking or drinking alcohol close to bedtime (or give up completely).</li>
+        <li>Only go to bed when you feel sleepy.</li>
+        <li>Don’t eat or watch TV in bed, but make it a place only for relaxing or sleeping.</li>
+        </ul>
+        ]]></Data>
+    </string>
+    <string name="fatigue_advice"><Data><![CDATA[
+        <p><b>Fatigue is the feeling of lacking energy and finding everyday tasks exhausting. It can affect the way you feel, and make it more difficult to enjoy even relaxing activities such as reading or watching TV. It can affect your mood and your relationships, so you find yourself getting impatient with yourself and others, or upset and tearful over small things. You might find that you avoid spending time with friends or family, because it just feels too exhausting. It’s not unusual for fatigue to last for many months after treatment is over. In some people, it may last for a year or two.</b></p>
+        <p>Fatigue can show itself in other ways. You may find yourself wanting to spend longer and longer in bed in the morning, but still have problems sleeping. You may have difficulty accomplishing the smallest tasks and find that you are short of breath doing even light activities. Poor concentration or memory loss might also be a problem. You might find that you have lost all interest in sex, even though you have recovered physically from your surgery.</p>
+        <p><b>Ways to manage fatigue:</b></p>
+        <ul>
+        <li>Regular exercise, perhaps a gentle walk, some stretching or a beginner’s yoga class, can help.</li>
+        <li>Try to get some fresh air and gentle exercise every day even if you don’t really feel like it and gradually increase your time/distance, but allow time to rest afterwards.</li>
+        <li>Take an afternoon nap if you need to, but get up again for the evening.</li>
+        <li>Meditation, acupuncture, massage, reflexology, aromatherapy, music therapy or reiki can help reduce stress and anxiety.</li>
+        <li>Keep to a routine – try not to stay in bed in the morning after you’ve woken up.</li>
+        <li>Eat as healthy a diet as possible to boost your energy levels.</li>
+        <li>Drink water, squash, diluted juice or herbal tea regularly to keep you hydrated.</li>
+        </ul>
+        ]]></Data>
+    </string>
+    <string name="lifestyle_choices_advice"><Data><![CDATA[
+        <p><b>There is plenty of evidence that lifestyle choices can have a direct impact on our health and wellbeing, and affect our risk of developing certain diseases and illnesses. Having had treatment for bowel cancer, you may feel that you want to do as much as you possibly can to improve your general health and to reduce the risk of your cancer coming back.</b></p>
+        <p>The lifestyle choices mentioned here may help reduce your personal risk. You may wish to incorporate some of them into your routine to a lesser or greater degree, depending on your personal circumstances and your budget.</p>
+        <p><b>General health advice:</b></p>
+        <ul>
+        <li>Reduce the amount of processed foods in your diet, especially refined ingredients, with a high fat and/or sugar content, and high levels of preservatives.</li>
+        <li>Avoid reheating fats and oils.</li>
+        <li>Avoid super-heated snacks such as crisps, chips and cheap breakfast cereals.</li>
+        <li>Reduce your intake of smoked, barbequed or burnt foods.</li>
+        <li>There is evidence of a link between excessive consumption of red meat (beef, lamb, pork) and bowel cancer, so we recommend that you aim for less than 500g (cooked weight) a week. The research linking processed meats (e.g. bacon, ham, salami) with bowel cancer is even stronger, so we recommend cutting down on these as much as possible.</li>
+        <li>If consumed at all, alcoholic drinks should be limited to two small drinks for men and one for women a day. For cancer prevention, the best recommendation is not to drink any alcohol at all.</li>
+        <li>There is evidence that long-term smokers are more likely than non-smokers to develop bowel cancer. Giving up smoking will have many health benefits, including reducing your risk of cancer.</li>
+        </ul>
+        ]]></Data>
+    </string>
+    <string name="environmental_factors_advice"><Data><![CDATA[
+        <p><b>There is much debate about which environmental factors may cause cancer. In the meantime, you might like to take control by taking steps to avoid some possible causes.</b></p>
+        <h5>Pesticides, herbicides and fertilisers</h5>
+        <p><b>You can reduce your exposure to these if you:</b></p>
+        <ul>
+        <li>soak lettuce leaves and herbs in water, then dry before eating (use a salad spinner)</li>
+        <li>wash fruit well before placing in the fruit bowl</li>
+        <li>wash vegetables well before cooking</li>
+        <li>buy organic foods if possible.</li>
+        </ul>
+        <p><b>It’s not always possible, but you could try limiting your exposure to other potentially harmful substances which occur in everyday products:</b></p>
+        <ul>
+        <li>petrol and diesel fumes, paraffin</li>
+        <li>cosmetics, shower gels and  that contain parabens</li>
+        <li>polycarbonate plastic bottles (use glass where possible).</li>
+        </ul>
+        <p><b>And these are a few easy ways to limit your exposure:</b></p>
+        <ul>
+        <li>have leafy plants and ferns around the house to help absorb environmental pollutants</li>
+        <li>do not reuse plastic water bottles</li>
+        <li>rinse soap and detergents thoroughly from crockery and cutlery</li>
+        <li>don’t store food in plastic food containers or plastic film</li>
+        <li>if you like burning candles go for soy or beeswax varieties.</li>
+        </ul>
+        ]]></Data>
+    </string>
+    <string name="making_changes_advice"><Data><![CDATA[
+        <p><b>If you have been diagnosed – and treated – for bowel cancer, then you may also have noticed that it has altered your appetite or your ability to enjoy certain foods and drinks that used to be favourites.</b></p>
+        <p>Food is important to us in so many different ways – eating and sharing food can bring us great pleasure and make us feel better about ourselves.</p>
+        <p>This section aims to give bowel cancer patients – and their families and carers – some clear guidance on what to expect at each stage of the cancer journey. It explains in simple terms how your appetite and digestive system can be affected by the illness, and what to expect from the side-effects of the different types of treatment you might have. It can take time for your body to settle down again after treatment. For some, it can be a process of ‘trial and error’, sometimes for many months, or longer. We want to make it as easy as possible for you to make these changes, so all our suggestions are based on the experiences of our Bowel Cancer Voices and members of our online patient forum.</p>
+        <p>We aim to help you find new ways of eating and enjoying your food. These simple tips and pieces of trusted advice have already helped many people to reduce problems associated with their diet and to overcome the unexpected side-effects of a disrupted digestive system. We hope that they will help you too.</p>
+        ]]></Data>
+    </string>
+    <string name="before_after_surgery_advice"><Data><![CDATA[
+        <p><b>Problems with changes in your bowel habit after you complete your treatment can be so frustrating; you just want your life to go back to normal, and that includes your bodily functions.</b></p>
+        <p>Unfortunately, your treatment will have had an impact on the way your bowel functions. Scars form as a natural part of the healing process but these can sometimes cause some narrowing around the area where the bowel has been re-joined. Bands of tough tissue called adhesions may also form as a result of your surgery.</p>
+        <p>Radiotherapy can also affect the bowel, making it more sensitive and prone to inflammation in the area, which can take some time to settle back down again. The muscles in your abdomen which would normally massage your bowel, helping it to move food waste along, may be weaker and not as efficient immediately after surgery. Regular gentle exercise such as walking will help to regain tone, and reduce bloating and constipation.</p>
+        <h5>Why is it important to eat well before and after surgery?</h5>
+        <p>Surgery can take its toll on your body and ensuring a well-balanced diet in preparation for surgery is one way you can help speed up your recovery. Foods high in protein can aid the healing process and lower the risk of wound infection. Carbohydrates supply much-needed energy which, in turn, can help earlier mobilisation, potentially reducing some post-operative complications.</p>
+        <p>Many hospitals now have an Enhanced Recovery Programme, where you will be offered carbohydrate-rich drinks to take, usually from about three days before until two hours before your operation, and for a few days after the operation too. This has shown to promote faster healing and recovery.</p>
+        <p>It may be worth preparing some meals before you go into hospital and freezing them so you have healthy meals ready at a time when you may not feel like cooking.</p>
+        <p>Both before and after surgery it is wise to eat small frequent meals or top up your regular meals with nutritious snacks and drinks.</p>
+        <p>Protein-rich foods include meat, fish, chicken, eggs and cheese; and carbohydrate-rich foods include potatoes, bread, cereal, rice and pasta, so aim to combine both in your meals. Here are some examples:</p>
+        <ul>
+        <li>fish finger sandwich</li>
+        <li>ham/corned beef sandwich</li>
+        <li>sardines on toast</li>
+        <li>eggs on toast</li>
+        <li>cheese on toast/crackers</li>
+        <li>cheese sauce with fish and pasta.</li>
+        </ul>
+        ]]></Data>
+    </string>
+    <string name="after_surgery_advice"><Data><![CDATA[
+        <p><b>In the early stages of recovery after surgery, your bowel will be very sensitive and you may have to make small changes to your diet. </b></p>
+        <p>You may be recommended to follow a low-fibre diet, explained in the next section. Having too much fibre, too quickly, in your food can cause problems with wind and diarrhoea or bloating, and you may want to consider ways in which you can avoid foods which are more difficult to digest while your bowel is still healing. These might include fruit and vegetables with tough skins, or foods that need a lot of chewing to break them down before you swallow them. You should be able to gradually reintroduce these foods, although it can take some time to establish a new bowel pattern.</p>
+        <p>There can also be problems associated with pain around the operation site, although this usually settles in time, and can be helped with medicines to help reduce the discomfort. If you are concerned, talk to your colorectal specialist nurse or stoma nurse specialist.</p>
+        <p>Sitting still, especially for long periods, can cause discomfort and potentially lead to other long-term problems. You can avoid this by getting up or changing position regularly, every 20-30 minutes, especially while you are healing. This will also help to avoid a build-up of wind that can get trapped in the bowel, causing more pain and discomfort.</p>
+        <h5>Tips to avoid wind and pain</h5>
+        <ul>
+        <li>eat and drink slowly in a relaxed environment, taking time to chew foods well</li>
+        <li>eat at regular intervals, and don’t eat on the move or skip meals</li>
+        <li>don’t expect to get back to normal overnight – it will take time</li>
+        <li>don’t worry too much – over time you can balance your diet out as your bowel recovers</li>
+        <li>drink water, little and often </li>
+        <li>avoid ‘windy’ foods such as beans, pickles and fizzy drinks</li>
+        <li>introduce spicy foods slowly</li>
+        <li>try charcoal tablets or peppermint water/tea, or peppermint oil capsules</li>
+        <li>take regular exercise</li>
+        <li>try to stop smoking.</li>
+        </ul>
+        ]]></Data>
+    </string>
+    <string name="low_fibre_diets_advice"><Data><![CDATA[
+        <p><b>Fibre is only found in foods that come from plants. There are two types: insoluble and soluble fibre.</b></p>
+        <ul>
+        <li><b><i>Insoluble fibre:</i></b> The body can’t digest this type of fibre so it passes through the bowel, helping other food and waste products move through the bowel more easily. Wholegrain bread and breakfast cereals, brown rice, and  wheat pasta are good sources.</li>
+        <li><b><i>Soluble fibre:</i></b> This type of fibre can be partly digested and may help reduce the amount of cholesterol in the blood. Oats and pulses are good examples.</li>
+        </ul>
+        <p>This means that a <b><i>low-fibre diet</i></b> will reduce the amount of undigested material that passes through your bowel. It also helps to rest the bowel after surgery to enhance healing.</p>
+        <p>A <b><i>low-residue diet</i></b> is  restrictive than a low-fibre diet and, in addition to the guidance here regarding low fibre diet, you should avoid caffeine, limit dairy produce to a maximum of two servings a day, and avoid raw fruits of any kind. Both low-residue or low-fibre diets may be advised for around six weeks after bowel surgery and for those patients who have had a colonic stent inserted. It helps by reducing the size and frequency of your stools thereby minimising abdominal discomfort, diarrhoea, and inflammation around the site of the operation or stent. If you need help with this your colorectal nurse, stoma nurse or dietician can advise you.</p>
+        <p>After six weeks you can gradually start to introduce small amounts of soluble fibre foods back into your diet, ensuring you are drinking plenty of fluids as you do so. You could start with peeled apples, pears and oats.</p>
+        ]]></Data>
+    </string>
+    <string name="foods_you_can_eat_advice"><Data><![CDATA[
+        <ul>
+        <li>White bread and pasta</li>
+        <li>Refined cereals – rice krispies, ready brek</li>
+        <li>White rice</li>
+        <li>Milk, smooth yogurt, ice cream</li>
+        <li>Rice pudding, semolina, tapioca</li>
+        <li>Soups and sauces (strained), clear soups and stock</li>
+        <li>Cheese</li>
+        <li>Tender, lean meat, poultry, fish</li>
+        <li>Eggs</li>
+        <li>Oil, margarine, butter and mayonnaise</li>
+        <li>Fruit juices (except prune juice)</li>
+        <li>Vegetable juices</li>
+        <li>Smooth peanut butter – up to two tablespoons a day</li>
+        <li>Fats, oils and dressings without seeds</li>
+        <li>Desserts with no seeds or nuts</li>
+        <li>Smooth jam, honey, marmite</li>
+        </ul>
+        <h5>Low-fibre vegetables that can be eaten raw:</h5>
+        <ul>
+        <li>Avocado</li>
+        <li>Lettuce</li>
+        <li>Cucumber (no skin or seeds)</li>
+        <li>Courgettes (no skin or seeds)</li>
+        </ul>
+        <h5>Low fibre vegetables that can be eaten if well cooked (no skin or seeds):</h5>
+        <ul>
+        <li>Carrots</li>
+        <li>Tomatoes</li>
+        <li>Potatoes</li>
+        <li>Asparagus tips</li>
+        <li>Pureed spinach</li>
+        <li>Aubergine</li>
+        <li>Green beans</li>
+        </ul>
+        <h5>Low-fibre fruits that can be eaten raw or cooked (no skin):</h5>
+        <ul>
+        <li>Bananas</li>
+        <li>Apple sauce</li>
+        <li>Ripe apricots</li>
+        <li>Ripe melon</li>
+        <li>Peaches or nectarines</li>
+        <li>Papaya</li>
+        <li>Plums</li>
+        </ul>
+        ]]></Data>
+    </string>
+</resources>

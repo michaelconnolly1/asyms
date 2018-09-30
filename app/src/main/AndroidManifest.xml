@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.michael.aysms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name=".view.SplashActivity"
+            android:label="AYsMS"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.Login"
+            android:label="AYsMS Login" />
+        <activity
+            android:name=".view.MainActivity"
+            android:label="AYsMS"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".view.QuestionnaireActivity"
+            android:label="Choose Questionnaire" />
+        <activity
+            android:name=".view.BeingSickActivity"
+            android:label="Being Sick" />
+        <activity
+            android:name=".view.FeelingSickActivity"
+            android:label="Feeling Sick" />
+        <activity
+            android:name=".view.DiarrhoeaActivity"
+            android:label="Diarrhoea" />
+        <activity
+            android:name=".view.ConstipationActivity"
+            android:label="Constipation" />
+        <activity
+            android:name=".view.EatingAndDrinkingActivity"
+            android:label="Eating and Drinking"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.EatingAndDrinkingBActivity"
+            android:label="Eating and Drinking" />
+        <activity
+            android:name=".view.SignsOfInfectionActivity"
+            android:label="Signs of Infection" />
+        <activity
+            android:name=".view.ClexaneInjectionsActivity"
+            android:label="Clexane Injections" />
+        <activity
+            android:name=".view.ActivityLevelsActivity"
+            android:label="Activity Levels"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.TirednessActivity"
+            android:label="Tiredness" />
+        <activity
+            android:name=".view.BodySelectActivity"
+            android:label="Pain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PainActivity"
+            android:label="Pain" />
+        <activity
+            android:name=".view.Pain1Activity"
+            android:label="Pain" />
+        <activity
+            android:name=".view.HowDoYouFeelActivity"
+            android:label="How Do You Feel?"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.ProblemsOrIssuesActivity"
+            android:label="Any Other Problems or Issues?"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.ViewQuestionnaireActivity"
+            android:label="View Questionnaire"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.ViewQuestionnairePage2Activity"
+            android:label="View Questionnaire"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.PasscodeActivity"
+            android:label="Enter Passcode" />
+        <activity
+            android:name=".view.SelfCareAdviceActivity"
+            android:label="Self-Care Advice" />
+        <activity
+            android:name=".view.EndOfTreatmentActivity"
+            android:label="End of Treatment Advice" />
+        <activity
+            android:name=".view.ChemotherapyAdviceActivity"
+            android:label="Chemotherapy Advice" />
+        <activity
+            android:name=".view.CancerAdviceActivity"
+            android:label="Cancer Advice" />
+        <activity
+            android:name=".view.EatingWellAdviceActivity"
+            android:label="Eating Well Advice" />
+        <activity
+            android:name=".view.SetSettingsActivity"
+            android:label="Set Settings"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.ChangeSettingsActivity"
+            android:label="Settings"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.ClinicianMainActivity"
+            android:label="AYsMS"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".view.ViewPatientActivity"
+            android:label="Patient Details" />
+        <activity
+            android:name=".view.QuestionnaireListActivity"
+            android:label="Questionnaires"/>
+        <activity
+            android:name=".view.MessageActivity"
+            android:label="Chat"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- [START firebase_service] -->
+        <service android:name=".Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="75dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBeingSick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Have you felt unusually tired in the past 24 hours?"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewInfection"
+                android:layout_marginLeft="10dp"
+                android:onClick="radioClick"
+                android:id="@+id/sickRG">
+
+                <RadioButton
+                    android:id="@+id/sickYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:text="Yes"
+                    android:onClick="radioClick"/>
+
+                <RadioButton
+                    android:id="@+id/sickNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:text="No"
+                    android:onClick="radioClick"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/extraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How severe was it?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/severityRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Mild - Feeling a little more tired than usual, relieved by rest"
+                        android:id="@+id/severityMild"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Moderate - Feeling tired, not relieved by rest, affecting some normal daily activities"
+                        android:id="@+id/severityModerate"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Severe - Feeling very tired, not relieved by rest, interfering with most daily activities"
+                        android:id="@+id/severitySevere"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/botherRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all"
+                        android:id="@+id/botherNotAtAll"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little"
+                        android:id="@+id/botherALittle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit"
+                        android:id="@+id/botherQuiteABit"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much"
+                        android:id="@+id/botherVeryMuch"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textAffectingAbility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Is your tiredness affecting your ability to care for yourself (e.g. use the bathroom, wash)?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/selfCareRG">
+
+                    <RadioButton
+                        android:id="@+id/selfCareYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/selfCareNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textBed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Are you confined to your bed for most of the day due to your tiredness?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/bedRG">
+
+                    <RadioButton
+                        android:id="@+id/bedYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/bedNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_height="50dip"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer"/>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="120dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBeingSick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Are you drinking well today? (if you are drinking enough your mouth and throat will not feel dry and you won’t feel thirsty)"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="radioClick"
+                android:id="@+id/sickRG">
+
+                <RadioButton
+                    android:id="@+id/sickYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:text="Yes"
+                    android:onClick="radioClick"/>
+
+                <RadioButton
+                    android:id="@+id/sickNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:text="No"
+                    android:onClick="radioClick"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/extraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/textMouthDry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Does your mouth feel dry?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/mouthRG">
+
+                    <RadioButton
+                        android:id="@+id/mouthDryYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/mouthDryNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textThirsty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Do you feel thirsty?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/thirstyRG">
+
+                    <RadioButton
+                        android:id="@+id/thirstyYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/thirstyNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textUnwell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Do you feel unwell?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/unwellRG">
+
+                    <RadioButton
+                        android:id="@+id/unwellYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/unwellNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="Is there a reason why you are not drinking much?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notDrinkingReason"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/botherRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all"
+                        android:id="@+id/botherNotAtAll"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little"
+                        android:id="@+id/botherALittle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit"
+                        android:id="@+id/botherQuiteABit"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much"
+                        android:id="@+id/botherVeryMuch"/>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:layout_height="50dip"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer"/>
+
+</RelativeLayout>

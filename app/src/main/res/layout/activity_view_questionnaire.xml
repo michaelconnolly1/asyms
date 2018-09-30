@@ -1,0 +1,1858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="FEELING SICK"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/fsTextViewBeingSick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Have you felt sick in the past 24 hours?"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/fsSickRG">
+
+                <RadioButton
+                    android:id="@+id/fsSickYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/fsSickNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/fsExtraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How severe was it?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:enabled="false"
+                    android:id="@+id/fsSeverityRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Mild - feeling sick, loss of appetite, eating normally"
+                        android:enabled="false"
+                        android:id="@+id/fsSeverityMild" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Moderate - feeling sick, loss of appetite, eating and drinking less than normal"
+                        android:enabled="false"
+                        android:id="@+id/fsSeverityModerate" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Severe - feeling sick, loss of appetite, eating and drinking very small amounts compared to normal"
+                        android:enabled="false"
+                        android:id="@+id/fsSeveritySevere" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:enabled="false"
+                    android:id="@+id/fsBotherRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all"
+                        android:enabled="false"
+                        android:id="@+id/fsBotherNotAtAll"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little"
+                        android:enabled="false"
+                        android:id="@+id/fsBotherALittle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit"
+                        android:enabled="false"
+                        android:id="@+id/fsBotherQuiteABit"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much"
+                        android:enabled="false"
+                        android:id="@+id/fsBotherVeryMuch"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="BEING SICK"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/bsTextViewBeingSick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="top"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Have you been sick today?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:enabled="false"
+                    android:id="@+id/bsSickRG">
+
+                    <RadioButton
+                        android:id="@+id/bsSickYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/bsSickNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/bsExtraquestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dip"
+                        android:text="How severe was it?"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:enabled="false"
+                        android:id="@+id/bsSeverityRG">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="6dip"
+                            android:textColor="@color/grey"
+                            android:text="Mild - sick once or twice in the past 24 hours (at least 5 minutes between episodes of sickness)"
+                            android:enabled="false"
+                            android:id="@+id/bsSeverityMild"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="6dip"
+                            android:textColor="@color/grey"
+                            android:text="Moderate - sick 3-5 times in past 24 hours (at least 5 minutes between episodes of sickness)"
+                            android:enabled="false"
+                            android:id="@+id/bsSeverityModerate"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="6dip"
+                            android:textColor="@color/grey"
+                            android:text="Severe - sick 6 times or more in the past 24 hours (at least 5 minutes between episodes of sickness)"
+                            android:enabled="false"
+                            android:id="@+id/bsSeveritySevere"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dip"
+                        android:text="How much did it bother you?"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:enabled="false"
+                        android:id="@+id/bsBotherRG">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:text="Not at all"
+                            android:enabled="false"
+                            android:id="@+id/bsBotherNotAtAll"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:text="A little"
+                            android:enabled="false"
+                            android:id="@+id/bsBotherALittle"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:text="Quite a bit"
+                            android:enabled="false"
+                            android:id="@+id/bsBotherQuiteABit"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:text="Very much"
+                            android:enabled="false"
+                            android:id="@+id/bsBotherVeryMuch"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="DIARRHOEA"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewDiarrhoea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="top"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/black"
+            android:text="Have you had any diarrhoea in the past 24 hours?"
+            android:textSize="16dp"/>
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diarrhoeaRG">
+
+            <RadioButton
+                android:id="@+id/diarrhoeaYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:enabled="false"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/diarrhoeaNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:enabled="false"
+                android:text="No"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/dExtraquestions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:text="How severe was it?"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:enabled="false"
+                android:id="@+id/dSeverityRG">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dip"
+                    android:textColor="@color/grey"
+                    android:text="Mild - 1-3 more bowel movements per day than usual"
+                    android:enabled="false"
+                    android:id="@+id/dSeverityMild"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dip"
+                    android:textColor="@color/grey"
+                    android:text="Moderate - 4-6 more bowel movements per day than usual"
+                    android:enabled="false"
+                    android:id="@+id/dSeverityModerate"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dip"
+                    android:textColor="@color/grey"
+                    android:text="Severe - 7 or more bowel movements per day than usual"
+                    android:enabled="false"
+                    android:id="@+id/dSeveritySevere"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:text="How much did it bother you?"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/dBotherRG">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:text="Not at all"
+                    android:enabled="false"
+                    android:id="@+id/dBotherNotAtAll"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:text="A little"
+                    android:enabled="false"
+                    android:id="@+id/dBotherALittle"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:text="Quite a bit"
+                    android:enabled="false"
+                    android:id="@+id/dBotherQuiteABit"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:text="Very much"
+                    android:enabled="false"
+                    android:id="@+id/dBotherVeryMuch"/>
+            </RadioGroup>
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="CONSTIPATION"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Have you been constipated in the past 24 hours?"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/constipationRG">
+
+                <RadioButton
+                    android:id="@+id/constipationYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:enabled="false"
+                    android:textColor="@color/grey" />
+
+                <RadioButton
+                    android:id="@+id/constipationNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/cExtraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How severe was it?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/cSeverityRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Mild - Occasional/intermittent constipation; occasional use of laxatives/changes in diet (e.g. eating more fruit and vegetables)"
+                        android:enabled="false"
+                        android:id="@+id/cSeverityMild"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Moderate - Persistent constipation with regular use of laxatives or enemas, affecting normal daily activities"
+                        android:enabled="false"
+                        android:id="@+id/cSeverityModerate"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Severe - Persistent constipation, laxatives/ enemas not working, affecting normal daily activities AND ability to care for self"
+                        android:enabled="false"
+                        android:id="@+id/cSeveritySevere"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How long has it been since your last bowel movement?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dip"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/lastMovementRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Between 24h and 48h?"
+                        android:enabled="false"
+                        android:id="@+id/cLessThan48"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="More than 48h?"
+                        android:enabled="false"
+                        android:id="@+id/cMoreThan48"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/cBotherRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all"
+                        android:enabled="false"
+                        android:id="@+id/cBotherNotAtAll"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little"
+                        android:enabled="false"
+                        android:id="@+id/cBotherALittle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit"
+                        android:enabled="false"
+                        android:id="@+id/cBotherQuiteABit"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much"
+                        android:enabled="false"
+                        android:id="@+id/cBotherVeryMuch"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="EATING AND DRINKING"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewBeingSick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Are you drinking well today? (if you are drinking enough your mouth and throat will not feel dry and you won’t feel thirsty)"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/eanddRG">
+
+                <RadioButton
+                    android:id="@+id/eanddYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/eanddNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/eanddExtraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textMouthDry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Does your mouth feel dry?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/eanddMouthRG">
+
+                    <RadioButton
+                        android:id="@+id/mouthDryYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/mouthDryNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textThirsty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Do you feel thirsty?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/eanddThirstyRG">
+
+                    <RadioButton
+                        android:id="@+id/thirstyYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/thirstyNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textUnwell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Do you feel unwell?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/eanddUnwellRG">
+
+                    <RadioButton
+                        android:id="@+id/unwellYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/unwellNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="Is there a reason why you are not drinking much?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eanddNotDrinkingReason"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/eanddBotherRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all"
+                        android:enabled="false"
+                        android:id="@+id/eanddBotherNotAtAll"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little"
+                        android:enabled="false"
+                        android:id="@+id/eanddBotherALittle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit"
+                        android:enabled="false"
+                        android:id="@+id/eanddBotherQuiteABit"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much"
+                        android:enabled="false"
+                        android:id="@+id/eanddBotherVeryMuch"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="EATING AND DRINKING"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Do you feel you are having problems eating enough today?"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/eanddbRG">
+
+                <RadioButton
+                    android:id="@+id/eanddbYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/eanddbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/eanddbExtraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textEatNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Are you still able to eat normal amounts?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/eanddbEatNormalRG">
+
+                    <RadioButton
+                        android:id="@+id/eanddbEatNormalYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/eanddbEatNormalNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textEatSmallAmounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Are you still able to eat, but eating smaller amounts?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/eanddbEatSmallRG">
+
+                    <RadioButton
+                        android:id="@+id/eanddbEatSmallYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/eanddbEatSmallNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textNotEatAtAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Are you not able to eat much at all?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/eanddbEatAtAllRG">
+
+                    <RadioButton
+                        android:id="@+id/eanddbEatAtAllYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/eanddbEatAtAllNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/eanddbBotherRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all"
+                        android:enabled="false"
+                        android:id="@+id/eanddbBotherNotAtAll"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little"
+                        android:enabled="false"
+                        android:id="@+id/eanddbBotherALittle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit"
+                        android:enabled="false"
+                        android:id="@+id/eanddbBotherQuiteABit"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much"
+                        android:enabled="false"
+                        android:id="@+id/eanddbBotherVeryMuch"/>
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="SIGNS OF INFECTION"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Have you experienced any signs of infection, such as fever, chills, body aches, dry cough, or feeling generally unwell in the past 24 hours?"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/soiRG">
+
+                <RadioButton
+                    android:id="@+id/soiYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/soiNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/soiExtraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How severe was it?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/soiSeverityRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Mild - Mild symptoms present, not affecting daily activities"
+                        android:enabled="false"
+                        android:id="@+id/soiSeverityMild"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Moderate - Moderate symptoms present, affecting some normal daily activities"
+                        android:enabled="false"
+                        android:id="@+id/soiSeverityModerate"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Severe - Severe symptoms, affecting normal daily activities and ability to self care"
+                        android:enabled="false"
+                        android:id="@+id/soiSeveritySevere"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/soiBotherRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all"
+                        android:enabled="false"
+                        android:id="@+id/soiBotherNotAtAll"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little"
+                        android:enabled="false"
+                        android:id="@+id/soiBotherALittle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit"
+                        android:enabled="false"
+                        android:id="@+id/soiBotherQuiteABit"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much"
+                        android:enabled="false"
+                        android:id="@+id/soiBotherVeryMuch"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textRacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Do you feel that your heart is racing?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/soiRacingRG">
+
+                    <RadioButton
+                        android:id="@+id/soiRacingYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/soiRacingNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textBreathless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Do you feel more breathless than usual?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/soiBreathlessRG">
+
+                    <RadioButton
+                        android:id="@+id/soiBreathlessYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/soiBreathlessNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textDORF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Do you feel dizzy or faint?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/soiDORFRG">
+
+                    <RadioButton
+                        android:id="@+id/soiDORFYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/soiDORFNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textUrine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Do you have pain on passing urine?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/soiUrineRG">
+
+                    <RadioButton
+                        android:id="@+id/soiUrineYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/soiUrineNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textLeaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Is there any redness or leaking from your wound?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/soiLeakingRG">
+
+                    <RadioButton
+                        android:id="@+id/soiLeakingYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/soiLeakingNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textStoma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Is there any redness or pain around your stoma?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/soiStomaRG">
+
+                    <RadioButton
+                        android:id="@+id/soiStomaYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/soiStomaNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="CLEXANE INJECTION"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Are you having daily Clexane injections? (Clexane is the injection that keeps your blood thin)"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ciRG">
+
+                <RadioButton
+                    android:id="@+id/ciYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/ciNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ciExtraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="Have you noticed any"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:textColor="@color/grey"
+                        android:text="Unusual Bleeding"
+                        android:id="@+id/unusualBleedingCheckbox"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:textColor="@color/grey"
+                        android:text="Bruising more than normal"
+                        android:id="@+id/bruisingCheckbox"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:textColor="@color/grey"
+                        android:text="Fever"
+                        android:id="@+id/feverCheckbox"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:textColor="@color/grey"
+                        android:text="Swelling in your legs"
+                        android:id="@+id/swellingCheckbox"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="ACTIVITY LEVELS"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="What activities have you done today? Tick all those that apply"
+                android:textSize="16dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/grey"
+                android:text="Washed/Showered/Bathed"
+                android:id="@+id/alWashedCheckbox"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/grey"
+                android:text="Been a walk"
+                android:id="@+id/alWalkedCheckbox"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/grey"
+                android:text="Activity c"
+                android:id="@+id/alActivitycCheckbox"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/grey"
+                android:text="Activity d"
+                android:id="@+id/alActivitydCheckbox"/>
+
+            <LinearLayout
+                android:id="@+id/alExtraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="How did you feel about your activity level today?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:id="@+id/alRG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+                    <RadioButton
+                        android:id="@+id/alHappyActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="I am happy with my activity levels today"/>
+                    <RadioButton
+                        android:id="@+id/alMoreActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="I would have liked to have been more active today (please explain below)"/>
+                    <RadioButton
+                        android:id="@+id/alStruggledActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="I struggled to be active today (please explain below)" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/alAdditionalinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@android:color/black"
+                        android:text="Can you explain your answer?"
+                        android:textSize="16dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:minLines="1"
+                        android:scrollbars="vertical"
+                        android:id="@+id/alAnswerEditText"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="TIREDNESS"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Have you felt unusually tired in the past 24 hours?"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tirednessRG">
+
+                <RadioButton
+                    android:id="@+id/tirednessYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/tirednessNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/tExtraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How severe was it?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:enabled="false"
+                    android:id="@+id/tSeverityRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Mild - Feeling a little more tired than usual, relieved by rest"
+                        android:enabled="false"
+                        android:id="@+id/tSeverityMild"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Moderate - Feeling tired, not relieved by rest, affecting some normal daily activities"
+                        android:enabled="false"
+                        android:id="@+id/tSeverityModerate"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Severe - Feeling very tired, not relieved by rest, interfering with most daily activities"
+                        android:enabled="false"
+                        android:id="@+id/tSeveritySevere"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tBotherRG">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all"
+                        android:enabled="false"
+                        android:id="@+id/tBotherNotAtAll"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little"
+                        android:enabled="false"
+                        android:id="@+id/tBotherALittle"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit"
+                        android:enabled="false"
+                        android:id="@+id/tBotherQuiteABit"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much"
+                        android:enabled="false"
+                        android:id="@+id/tBotherVeryMuch"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Is your tiredness affecting your ability to care for yourself (e.g. use the bathroom, wash)?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/tSelfCareRG">
+
+                    <RadioButton
+                        android:id="@+id/tSelfCareYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/tSelfCareNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Are you confined to your bed for most of the day due to your tiredness?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:enabled="false"
+                    android:id="@+id/tBedRG">
+
+                    <RadioButton
+                        android:id="@+id/tBedYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/tBedNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="No"/>
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_height="50dip"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer"/>
+
+</RelativeLayout>

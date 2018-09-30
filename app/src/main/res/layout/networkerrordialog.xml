@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip"
+        android:text="Network error - data not sent. Try again?"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="30dip"
+        android:paddingBottom="20dip">
+
+        <Button
+            android:id="@+id/yesAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes "
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:onClick="yesNoAgainClick"
+            android:layout_marginRight="50dp"/>
+        <Button
+            android:id="@+id/noAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:onClick="yesNoAgainClick"/>
+
+    </LinearLayout>
+</LinearLayout>

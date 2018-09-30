@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bodyLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="PAIN"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/body"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/body_yellow_cropped" />
+
+                <Button
+                    android:id="@+id/touchButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="buttonClick"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/touchButton1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="buttonClick"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/touchButton2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="buttonClick"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/touchButton3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="buttonClick"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="HOW DO YOU FEEL"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Overall, how are you feeling generally today?"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:id="@+id/feelinglevelRG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/asexpectedfeeling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Just the way I thought I would" />
+
+                    <RadioButton
+                        android:id="@+id/betterfeeling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Better than I thought I would (please explain below)" />
+
+                    <RadioButton
+                        android:id="@+id/worsefeeling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:enabled="false"
+                        android:text="Worse than I thought I would (please explain below)" />
+                </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/additionalfeelinginfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Can you explain your answer?"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:minLines="1"
+                    android:scrollbars="vertical"
+                    android:enabled="false"
+                    android:id="@+id/answerEditText"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:text="Are you feeling worried or anxious about anything today?"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/feelingRG">
+
+                <RadioButton
+                    android:id="@+id/anxiousYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dip"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/anxiousNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:enabled="false"
+                    android:text="No" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/additionalanxiousinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Can you explain what is making you feel like this?"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:minLines="1"
+                    android:scrollbars="vertical"
+                    android:enabled="false"
+                    android:id="@+id/feelLikeThis"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:text="ANY OTHER PROBLEMS OR ISSUES"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/extraquestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    <include
+        android:layout_height="50dip"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer"/>
+
+</RelativeLayout>

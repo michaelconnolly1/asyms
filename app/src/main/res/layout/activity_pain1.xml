@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBeingSick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="Was this a new pain?"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewBeingSick"
+                android:layout_marginLeft="10dp"
+                android:onClick="radioClick"
+                android:id="@+id/sickRG">
+
+                <RadioButton
+                    android:id="@+id/sickYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dip"
+                    android:textColor="@color/grey"
+                    android:onClick="radioClick"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/sickNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:onClick="radioClick"
+                    android:text="No" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/extraquestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How severe was it?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:id="@+id/severityRG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/severityMild"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Mild - In mild pain, not affecting normal daily activities" />
+
+                    <RadioButton
+                        android:id="@+id/severityModerate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Moderate -In moderate pain, affecting some normal daily activities" />
+
+                    <RadioButton
+                        android:id="@+id/severitySevere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dip"
+                        android:textColor="@color/grey"
+                        android:text="Severe - In severe pain, interfering with most daily activities and ability to self-care" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:text="How much did it bother you?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:id="@+id/botherRG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/botherNotAtAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Not at all" />
+
+                    <RadioButton
+                        android:id="@+id/botherALittle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="A little" />
+
+                    <RadioButton
+                        android:id="@+id/botherQuiteABit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Quite a bit" />
+
+                    <RadioButton
+                        android:id="@+id/botherVeryMuch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:text="Very much" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:onClick="continueClick"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

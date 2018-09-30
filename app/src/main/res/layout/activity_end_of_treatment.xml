@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/once_treatment_is_over"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:text="@string/title_once_treatment_is_over"
+                android:textColor="@color/white"
+                android:onClick="giveAdvice"/>
+
+            <Button
+                android:id="@+id/worries_about_reoccurrence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:text="@string/title_worries_about_reoccurrence"
+                android:textColor="@color/white"
+                android:onClick="giveAdvice"/>
+
+            <Button
+                android:id="@+id/follow_up_care"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:text="@string/title_follow_up_care"
+                android:textColor="@color/white"
+                android:onClick="giveAdvice"/>
+
+            <Button
+                android:id="@+id/emotions_and_feelings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:text="@string/title_emotions_and_feelings"
+                android:textColor="@color/white"
+                android:onClick="giveAdvice"/>
+
+            <Button
+                android:id="@+id/disturbed_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:text="@string/title_disturbed_sleep"
+                android:textColor="@color/white"
+                android:onClick="giveAdvice"/>
+
+            <Button
+                android:id="@+id/fatigue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:text="@string/title_fatigue"
+                android:textColor="@color/white"
+                android:onClick="giveAdvice"/>
+
+            <Button
+                android:id="@+id/lifestyle_choices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:text="@string/title_lifestyle_choices"
+                android:textColor="@color/white"
+                android:onClick="giveAdvice" />
+
+            <Button
+                android:id="@+id/environmental_factors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:text="@string/title_environmental_factors"
+                android:textColor="@color/white"
+                android:onClick="giveAdvice" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+    android:layout_height="50dip"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    layout="@layout/footer"/>
+
+</RelativeLayout>

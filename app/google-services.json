@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "739330863582",
+    "firebase_url": "https://aysms-7fb15.firebaseio.com",
+    "project_id": "aysms-7fb15",
+    "storage_bucket": "aysms-7fb15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739330863582:android:ffb2e61fd693d593",
+        "android_client_info": {
+          "package_name": "com.example.michael.aysms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739330863582-9ni966n9bmfa3fmaoqf8c8k0mb49uq9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIbLQmFPq0XKjnS8iioKIZsQ7fAgIIHEA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
